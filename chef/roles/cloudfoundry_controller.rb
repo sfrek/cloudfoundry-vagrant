@@ -1,5 +1,5 @@
-name: "cloudfoundry_controller",
-description: "CloudFoundry controller node",
+name "cloudfoundry_controller"
+description "CloudFoundry controller node"
 run_list(
   "role[cloudfoundry_nats_server]",
   "role[cloudfoundry_cloud_controller]",
