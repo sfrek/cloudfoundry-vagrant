@@ -1,25 +1,25 @@
 cookbooks:
   - apt:
-  - aws:
+  - logrotate:
+  - rbenv:
+  - git:
+  - ohai:
+  - dmg:
+  - runit:
   - build-essential:
+  - yum:
+  - windows:
   - chef_handler:
   - database:
-  - dmg:
-  - git:
-  - logrotate:
-  - mongodb:
   - mysql:
-  - nats:
-  - nginx:
-  - ohai:
-  - openssl:
   - postgresql:
-  - rbenv:
-  - redisio:
-  - runit:
-  - windows:
+  - aws:
   - xfs:
-  - yum:
+  - openssl:
+  - mongodb:
+  - nginx:
+  - nats:
+  - redisio:
   - cloudfoundry:
   - cloudfoundry-cloud_controller:
   - cloudfoundry-dea:
@@ -35,25 +35,26 @@ cookbooks:
   - cloudfoundry_service:
 
 environments:
-  - cf_multinode 
+  - cf_multinode:
 
 roles:
-  - cloudfoundry_cloud_controller
-  - cloudfoundry_controller
-  - cloudfoundry_deafull
-  - cloudfoundry_dea
-  - cloudfoundry_filesystem_gateway
-  - cloudfoundry_health_manager
-  - cloudfoundry_mongodb_gateway
-  - cloudfoundry_mongodb_node
-  - cloudfoundry_nats_server
-  - cloudfoundry_rabbitmq_gateway
-  - cloudfoundry_rabbitmq_node
-  - cloudfoundry_router
-  - cloudfoundry_ruby_runtime_1_9_2
-  - cloudfoundry_service_broker
-  - cloudfoundry_services
-  - cloudfoundry-single-node
-  - cloudfoundry_stager
+  - cloudfoundry_cloud_controller:
+  - cloudfoundry_dea:
+  - cloudfoundry_filesystem_gateway:
+  - cloudfoundry_health_manager:
+  - cloudfoundry_mongodb_gateway:
+  - cloudfoundry_mongodb_node:
+  - cloudfoundry_nats_server:
+  - cloudfoundry_rabbitmq_gateway:
+  - cloudfoundry_rabbitmq_node:
+  - cloudfoundry_router:
+  - cloudfoundry_stager:
+  - cloudfoundry_ruby_runtime_1_9_2:
+  - cloudfoundry_service_broker:
+  - cloudfoundry-single-node:
+  - pepe:
+  - cloudfoundry_controller:
+  - cloudfoundry_deafull:
+  - cloudfoundry_services:
 
 nodes:
